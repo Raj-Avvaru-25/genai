@@ -14,7 +14,7 @@ pip install pandas matplotlib scikit-learn tensorflow
 2. Run the analysis script with a target date. You can also set the number of training epochs:
 
 ```bash
-python3 stock_analysis.py --data NFLX.csv --date 01/12/2025 --epochs 15
+python3 cnn_rnn_lstm_stock_prediction.py --data NFLX.csv --date 01/12/2025 --epochs 15
 ```
 
 This will plot the closing price history and output a predicted closing price for the specified date (or the actual price if the date already exists in the file).
