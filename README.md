@@ -52,3 +52,14 @@ python3 cnn_rnn_lstm_stock_prediction.py --data NFLX.csv --date 01/12/2025
 
 The script trains a simple CNN/RNN/LSTM network and outputs the predicted price
 for the requested date.
+
+
+### Hybrid Year Prediction Graph
+
+`cnn_rnn_lstm_year_prediction.py` extends the hybrid model to forecast an entire year. Run it with a target year:
+
+```bash
+python3 cnn_rnn_lstm_year_prediction.py --data NFLX.csv --year 2027
+```
+
+If the chosen year already exists in the dataset, the script displays the actual prices for that year. Otherwise it predicts the closing price for each trading day and plots the results.
